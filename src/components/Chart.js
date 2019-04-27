@@ -20,6 +20,9 @@ class Chart extends Component{
     return (
       <div className="chart">
         <Bar
+          width={100}
+          height={20}
+          options={{ maintainAspectRatio: false }}
           data={this.state.chartData}
           options={{
             title:{
@@ -36,6 +39,9 @@ class Chart extends Component{
 
         <Line
           data={this.state.chartData}
+          width={100}
+          height={20}
+          options={{ maintainAspectRatio: false }}
           options={{
             title:{
               display:this.props.displayTitle,
@@ -51,6 +57,9 @@ class Chart extends Component{
 
         <Pie
           data={this.state.chartData}
+          width={100}
+          height={20}
+          options={{ maintainAspectRatio: false }}
           options={{
             title:{
               display:this.props.displayTitle,
