@@ -3,13 +3,14 @@ import Pie2 from './components/Pie2';
 import Barras from './components/Barras';
 import Lineas from './components/Lineas';
 import './App.css';
-//const user="ken_bauer";
+const user="ken_bauer";
 //const user="emamex98";
 //const user="Snowden";
+//const user="realDonaldTrump";
 //realDonaldTrump
 //const user="DepresiveDemon";
 //const user="elonmusk";
-const user="Diego_crdn";
+//const user="Diego_crdn";
 
 //https://twitter.com/ken_bauer
 class App extends Component{
@@ -169,8 +170,8 @@ componentDidMount(){
       return(
         <div className="App">
         <div className="App-header">
-          <h2> {"@"+user}</h2>
-          <button onClick={this.cosa}>Update dates</button>
+          <h2> {"@"+user}
+</h2>      
 
         </div>
         <Barras chartData={this.state.dias} location="Common days" legendPosition="bottom"/>
